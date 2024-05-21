@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo2.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+          <span id="element"></span>
+          <h1>Hi, It's Me <span>Mitanshi Upadhyay</span></h1>
+          <p class="text">
+            This is my official portfolio website to showcase my all works
+            related to <br />
+            web development
+          </p>
+          <div class="social">
+            <a href="mailto:mitanshiupadhyay91@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mitanshi-upadhyay-3259951a8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWwR2S8c6QleOMm%2FYSrqZbg%3D%3D"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/MitanshiUpadhyay3" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section  -->
+
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/girl_7981285.png" alt="me" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-text">
+              I'm a web enthusiast currently on an internship journey into web
+              development. I'm all about crafting engaging online experiences
+              and diving into the latest tech trends. My passion for coding
+              drives me to constantly learn and innovate. Excited to make a mark
+              in the digital world and create impactful projects that inspire!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-content active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2018</span><br />
+                  SSC, Sharda Mandir School, Nadiad
+                </li>
+                <li>
+                  <span>2020</span><br />
+                  HSC, Sharda Mandir School, Nadiad
+                </li>
+                <li>
+                  <span>Present</span><br />
+                  BE in Information technology, <br />
+                  Vadodara Institute of Engineering
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>July 2023 – August 2023</span><br />
+                  Internship Trainee, BrainyBeam Technologies <br />
+                  Web Design With React JS
+                </li>
+                <li>
+                  <span>Jan-23 to Present</span><br />
+                  Webbrains Technologies Pvt. Ltd <br />
+                  React-Node
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+
+    <div class="skills" id="skills">
+      <div class="container">
+        <h1 class="myskills">Skills</h1>
+        <section class="main">
+          <div class="container1" id="skills">
+            <h3 class="heading1">Technical Skills</h3>
+            <div class="technical-bars">
+              <div class="bar">
+                  <div class="info">
+                    <i class='bx bxl-html5' style='color:#c95d2e'  ></i>
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                  <div class="info">
+                  <i class='bx bxl-css3' style='color:#147bbc'  ></i>
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                  <div class="info">
+                    <i class='bx bxl-bootstrap' style='color:#563d7c'  ></i>
+                  <span>Bootstrsp/Tailwind</span>
+                </div>
+                <div class="progress-line boot">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                  <div class="info">
+                    <i class=' bx bxl-javascript' style=' color:#b0bc1e'  ></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="progress-line JS">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                  <div class="info">
+                    <i class='bx bxl-react' style='color:#69bcbc'  ></i>
+                  <span>ReactJS</span>
+                </div>
+                <div class="progress-line react">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                  <div class="info">
+                    <i class='bx bxl-redux' style='color:#764abc'  ></i>
+                    <span>Redux</span>
+                </div>
+                <div class="progress-line redux">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container1">
+            <h3 class="heading1">Professional Skill</h3>
+            <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="c-text">creativity</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">60%</div>
+                    <div class="c-text">communication</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">80%</div>
+                    <div class="c-text">Problem Solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="c-text">Team Work</div>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+      </div>
+    </div>
+
+     
+    <!-- Project Section -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h3 class="sub-title">Projects</h3>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/paradise.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Paradise Club</h3>
+                        <p>An emerging Travel and Service provider website created using ReactJS that offers a variety of packages and stunning images to help you plan your perfect getaway. </p>
+                        <a href="https://mitanshiupadhyay3.github.io/paradiseclub/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/weather.avif" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Weather Website provides real-time weather information and forecasts for any location worldwide. Built with HTML, CSS, and JavaScript, it features a user-friendly interface and responsive design for seamless access on any device.</p>
+                        <a href="https://mitanshiupadhyay3.github.io/WeatherApp/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/redux.webp" alt="">
+                    <div class="layer">
+                        <h3>My Wardrobe</h3>
+                        <p>An E-commerce like website created to understand the working of Redux. Products are fetched and added to cart using actions and reducers. </p>
+                        <a href="https://mitanshiupadhyay3.github.io/redux/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#portfolio2" class="btn" id="btn-see-more" onclick="seemore()">See More</a>
+        </div>
+    </div>
+
+
+
+   
+      <div class="container" id="portfolio2">
+          <div class="work-list">
+              <div class="work">
+                  <img src="./images/ex3.png" alt="">
+                  <div class="layer">
+                      <h3>Expense Tracker</h3>
+                      <p>Expense tracker website helps you manage your income and expenses, providing a clear view of your total available balance. Built with React JS, it also shows detailed insights on where your money is spent and where your income comes from.</p>
+                      <a href="https://mitanshiupadhyay3.github.io/expense-tracker/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="./images/todo2.webp" alt="">
+                  <div class="layer">
+                      <h3>TO-DO List</h3>
+                      <p>Our to-do list app, built with React JS and utilizing localStorage, helps you efficiently manage your tasks. It saves your lists directly in your browser, ensuring your tasks are always available, even after you close the app.</p>
+                      <a href="https://mitanshiupadhyay3.github.io/to-do-list/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="./images/calc.jpeg" alt="">
+                  <div class="layer">
+                      <h3>Calculator</h3>
+                      <p>Our calculator, built with HTML, CSS, and JavaScript, offers a user-friendly interface for performing basic arithmetic operations. It provides accurate calculations and a clean design for quick and easy use.</p>
+                      <a href="https://mitanshiupadhyay3.github.io/Calculator/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="#portfolio" class="btn" id="btn-see-less" onclick="seeless()">See Less</a>
+      </div>
+  
+
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> mitanshiupadhyay91@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 6352445677</p>
+                    <div class="social">
+                        <a href="mailto:mitanshiupadhyay91@gmail.com" target="_blank"
+                          ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/mitanshi-upadhyay-3259951a8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWwR2S8c6QleOMm%2FYSrqZbg%3D%3D"
+                          target="_blank"
+                          ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                        <a href="https://github.com/MitanshiUpadhyay3" target="_blank"
+                          ><i class="fa-brands fa-github"></i
+                        ></a>
+                      </div>
+                      <a href="images/Final Resume.pdf" download class="btn btn2" >Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169; portfolio. Made with <i class="fas fa-heart"></i> By Mitanshi</p>
+        </div>
+    </div>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer", "Frontend Developer", "Backend Developer"],
+        typeSpeed: 50,
+      });
+
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-content");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+
+      function seemore(){
+          let btnSee = document.getElementById("btn-see-more");
+          btnSee.style.display = "none";
+          let portfolio2 = document.getElementById("portfolio2");
+          portfolio2.style.display = "block"
+      }
+
+      function seeless(){
+        let btnSee = document.getElementById("btn-see-more");
+          btnSee.style.display = "block";
+          let portfolio2 = document.getElementById("portfolio2");
+          portfolio2.style.display = "none"
+      }
+
+
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "-30px";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+
+      
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwrhcSBDfdujAbUxj2zEF-Zz7i6wLPuvNnZUzQdtRnwsKcHxyepxL_fjNk4i18PW38psQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        console.log("Success")
+        msg.innerHTML = "Message Sent Successfully!!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 1000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
